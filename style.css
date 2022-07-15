@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+header h1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: rgb(126, 41, 236);
+}
+.textvideo{
+    margin-bottom: 2%;
+    color: rgb(238, 130, 238);
+}
+#video iframe{
+    border: 2px solid rgb(255, 130, 238);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+}
+#contenedor{
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid rgb(255, 255, 0);
+}
+.tituloComando{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: rgb(255, 100, 0);
+}
+.comandos{
+    margin-bottom: 2%;
+    color: rgb(0, 255, 0);
+}
+.textcomandos{
+    margin-bottom: 2%;
+}
+footer{
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 0.75px solid rgb(0, 0, 255);
+    padding: 3px;
+}
