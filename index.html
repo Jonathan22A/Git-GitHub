@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Git-GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GIT - GITHUB</h1>
+    </header>
+    <div id="video">
+        <h2 class="textvideo">Esta página solo es un resumen de lo que puede aprender de Git y GitHub del siguiente curso:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VdGzPZ31ts8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        <h4 class="textvideo">Si no puede reproducir el video puede verlo haciendo <a target="_blank" href="https://www.youtube.com/watch?v=VdGzPZ31ts8&list=PLvELCU-vDzO6clc2aZxQomPwbSbInWY7U">CLICK AQUI</a></h4>
+    </div>
+    <div id="contenedor">
+        <h2 class="tituloComando">
+            Comandos para la configuración de Git
+        </h2>
+        <h3 class="comandos">git --version</h3>
+        <p class="textcomandos">
+            Muestra si está Git instalado correctamente, mostrando la versión del mismo.
+        </p>
+        <h3 class="comandos">git config --global user.name "UsuarioDeGitHub"</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Con (user.name) agregamos el Usuario a Git (tiene que ser el mismo usuario que colocamos en GitHub).
+        </p>
+        <h3 class="comandos">git config --global user.email "CorreoDeGitHub"</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Con (user.email) agregamos el email a Git (tiene que ser el mismo usuario que colocamos en GitHub).
+        </p>
+        <h3 class="comandos">git config --global core.editor "code --wait"</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Y (core.editor) para indicarle a Git que VSCode es nuestro editor de texto por defecto. <br>
+            (code --wait) es para que la terminal se quede esperando hasta que nosotros cerremos nuestro editor de texto.
+        </p>
+        <h3 class="comandos">git config --global core.autocrlf “true”</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Y (core.autocrlf) para que Git sepa como tratar los saltos de línea. Si utilizas una mac <br>
+            o tienes linux se reemplaza "true" por "input".
+        </p>
+        <h3 class="comandos">git config --global -e</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Y (-e) Ver el archivo de configuración Global.
+        </p>
+        <h3 class="comandos">git config --global -h</h3>
+        <p class="textcomandos">
+            El config --global Sirve para que la configuración que agregamos a continuación se efectúe de manera global <br>
+            y no por proyecto. Y (-h) para ver todas las configuraciones que pueden realizarse en Git.
+        </p>
+        <h2 class="tituloComando">
+            Comandos básicos
+        </h2>
+        <h3 class="comandos">ls</h3>
+        <p class="textcomandos">
+            Permite poder listar todos los archivos y carpetas que se encuentren dentro de una determinada carpeta, <br>
+            excluyendo las carpetas y archivos ocultos.
+        </p>
+        <h3 class="comandos">ls -a</h3>
+        <p class="textcomandos">
+            Permite poder listar todos los archivos y carpetas que se encuentren dentro de una determinada carpeta, <br>
+            incluso las carpetas y archivos ocultos.
+        </p>
+        <h3 class="comandos">pwd</h3>
+        <p class="textcomandos">
+            Para saber en qué carpeta nos encontramos actualmente.
+        </p>
+        <h3 class="comandos">cd</h3>
+        <p class="textcomandos">
+            Para poder movernos entre carpetas. Precisamente para poder ingresar a las carpetas.
+        </p>
+        <h3 class="comandos">cd ..</h3>
+        <p class="textcomandos">
+            Para poder movernos entre carpetas. Precisamente para poder salir de las carpetas.
+        </p>
+        <h3 class="comandos">mkdir "NombreNuevaCarpeta"</h3>
+        <p class="textcomandos">
+            Para poder crear una nueva carpeta desde la terminal.
+        </p>
+        <h3 class="comandos">code .</h3>
+        <p class="textcomandos">
+            Para abrir el editor de texto desde la terminal.
+        </p>
+        <h3 class="comandos">cat "NombreDelArchivo"</h3>
+        <p class="textcomandos">
+            Muestra lo que contiene el archivo.
+        </p>
+        <h2 class="tituloComando">
+            Comandos básicos de Git
+        </h2>
+        <h3 class="comandos">git init</h3>
+        <p class="textcomandos">
+            Comando para inicializar un Repositorio.
+        </p>
+        <h3 class="comandos">git status</h3>
+        <p class="textcomandos">
+            Nos muestra el estado actual de nuestro repositorio.
+        </p>
+        <h3 class="comandos">git add "NombreDelArchivo"</h3>
+        <p class="textcomandos">
+            Añade un cambio del directorio de trabajo en el entorno de ensayo. De este modo, indica a Git que <br>
+            quieres incluir actualizaciones en un archivo concreto en la próxima confirmación.
+        </p>
+        <h3 class="comandos">git commit -m "NombreSignificativo"</h3>
+        <p class="textcomandos">
+            Captura una instantánea de los cambios preparados en ese momento del proyecto. Las instantáneas confirmadas <br>
+            pueden considerarse como versiones seguras de un proyecto.
+        </p>
+        <h3 class="comandos">git rm "NombreDelArchivo"</h3>
+        <p class="textcomandos">
+            Para eliminar un archivo.
+        </p>
+        <h3 class="comandos">git mv "NombreAteriorDelArchivo" "NombreNuevoDelArchivo"</h3>
+        <p class="textcomandos">
+            Par cambiar el nombre de un archivo.
+        </p>
+        <h3 class="comandos">git diff</h3>
+        <p class="textcomandos">
+            Muestra lo que que se modificó en los archivos.
+        </p>
+        <h3 class="comandos">git log</h3>
+        <p class="textcomandos">
+            Muestra el historial de los commit junto con los datos de la persona que los realizó.
+        </p>
+        <h3 class="comandos">git log --oneline</h3>
+        <p class="textcomandos">
+            Muestra el historial de los commit en una línea.
+        </p>
+        <h2 class="tituloComando">
+            Comandos de ramas en Git (Branches)
+        </h2>
+        <h3 class="comandos">git branch</h3>
+        <p class="textcomandos">
+            Para saber en qué rama nos encontramos actualmente.
+        </p>
+        <h3 class="comandos">git checkout -b "NombreDeRama"</h3>
+        <p class="textcomandos">
+            Para crear una nueva rama.
+        </p>
+        <h3 class="comandos">git checkout "NombreDeRama"</h3>
+        <p class="textcomandos">
+            Para cambiar de rama.
+        </p>
+        <h3 class="comandos">git merge "NombreDeRama"</h3>
+        <p class="textcomandos">
+            Para traer todos los cambios realizados de una rama a la otra. (Importante: El comando debe ser escrito <br>
+            en la rama donde queremos copiar los datos de la otra rama.)
+        </p>
+        <h2 class="tituloComando">
+            Comandos para vincular Git con GitHub
+        </h2>
+        <h3 class="comandos">git remote add origin "LinkDelRepositorioDeGitHub"</h3>
+        <p class="textcomandos">
+            Con (git remote) podemos indicar si vamos a tener un servidor remoto en el cual subir los cambios. <br>
+            Y con (add origin) le estamos indicando de donde nosotros tenemos que obtener el código y también a donde <br>
+            tenemos que subir los cambios que realicemos en el mismo.
+        </p>
+        <h3 class="comandos">git push -u origin "NombreRama"</h3>
+        <p class="textcomandos">
+            Para poder crear una rama en GitHub donde ir guardando los cambios.
+        </p>
+        <h3 class="comandos">git push</h3>
+        <p class="textcomandos">
+            Para subir los cambios respecto con la rama que estemos trabajando.
+        </p>
+    </div>
+    <footer>
+        <a href="https://github.com/Jonathan22A/Git-GitHub.git">REPOSITORIO GIT - GITHUB</a>
+    </footer>
+</body>
+</html>
